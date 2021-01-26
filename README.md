@@ -162,7 +162,9 @@ maquinaCustom.servirCopo200(); // -200
 maquinaCustom.servirCopo200(); // -200
 maquinaCustom.servirCopo200(); // -200
 
-System.out.println(maq.agua() == 9000);
+// System.out.println(maq.agua() == 9000); // patch:
+System.out.println(maquinaCustom.copos200() == 25);
+System.out.println(maquinaCustom.agua() == 9000);
 
 MaquinaAguaConfiguravel maquininha = new MaquinaAguaConfiguravel(1000, 6, 3);
 
