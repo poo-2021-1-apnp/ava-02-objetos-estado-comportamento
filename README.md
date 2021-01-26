@@ -241,7 +241,8 @@ maquinao.abastecerAgua();
 maquinao.abastecerCopo300();
 // Esvaziando a máquina
 try { // servindo enquanto houver água
-  maquinao.servirCopo300();
+  // maquinao.servirCopo300(); // patch: faltou o while (true)
+  while (true) maquinao.servirCopo300();
 } catch (Exception e) {
   System.err.println("true: acabou a água");
 }
